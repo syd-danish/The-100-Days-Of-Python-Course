@@ -24,5 +24,5 @@ for i in birthday_dates:
         TO_ADDR=email_addresses[name]
         with smtplib.SMTP('smtp.gmail.com', 587) as mail:
             mail.starttls()
-            mail.login(user=MY_GMAIL, password='nbik qzck wnqm mdhg')
+            mail.login(user=MY_GMAIL, password='[TYPE YOUR PASSWORD]')
             mail.sendmail(from_addr=MY_GMAIL,to_addrs=TO_ADDR,msg=f"Subject: Happy Birthday!\n\n {selected_letter}")
